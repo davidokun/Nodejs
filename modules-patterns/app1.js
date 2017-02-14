@@ -22,3 +22,7 @@ var Greet4 = require('./greet4');
 // returned from require.
 var grtr = new Greet4();
 grtr.greet();
+
+// Require return only function exposed. No access to anything else.
+var greet5 = require('./greet5').greetFn;
+greet5();
