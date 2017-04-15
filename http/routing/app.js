@@ -15,7 +15,8 @@ http.createServer(function (req, res) {
 
         const person = {
             firstName: 'Jane',
-            lastName: 'Doe'
+            lastName: 'Doe',
+            address: 'Main street'
         };
 
         res.end(JSON.stringify(person));
