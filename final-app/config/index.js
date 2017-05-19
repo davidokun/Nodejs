@@ -3,7 +3,7 @@ const configValues = require('./config');
 module.exports = {
 
     getDbConnectionString: function () {
-        return 'mongo://' + configValues.uname + ':' +
+        return 'mongodb://' + configValues.uname + ':' +
                             configValues.pwd +
                             '@localhost:27017/nodetodo';
     }

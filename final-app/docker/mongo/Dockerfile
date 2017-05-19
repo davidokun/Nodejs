@@ -1,6 +1,4 @@
-FROM mongo:latest
+FROM aashreys/mongo-auth:latest
 
 MAINTAINER David Cuellar, davidokun99@gmail.com
 
-ENV MONGO_INITDB_ROOT_USERNAME=test
-ENV MONGO_INITDB_ROOT_PASSWORD=test

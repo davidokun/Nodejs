@@ -1,7 +1,12 @@
 version: '2'
 
 services:
-  mongo:
+  db:
     build: ./mongo
+    environment:
+      - AUTH=yes
+      - MONGODB_APPLICATION_DATABASE=nodetodo
+      - MONGODB_APPLICATION_USER=node
+      - MONGODB_APPLICATION_PASS=node123
     ports:
       - "27017:27017"
